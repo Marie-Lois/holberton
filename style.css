@@ -3,11 +3,34 @@
   margin: 0px;
   padding: 0px;
 }
-section {
-  width: 70%;
+body {
+  font-family: "AktivGrotesk";
+  width: 100%;
+  max-width: 100vw;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #545253;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 1.25rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 2em 0;
-  min-height: 100vh;
+  padding: 0 2em;
+}
+.section {
+  width: 100%;
+  padding: 4em 3em;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: start;
+  /* width: 80%; */
+  justify-content: space-between;
+  margin-top: 5em;
+  /* gap: 3em; */
 }
 a {
   text-decoration: none;
@@ -16,7 +39,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
+  /* display: block; */
 }
 h1,
 h2,
@@ -25,17 +48,7 @@ h4 {
   color: #000;
   line-height: 1.3;
   margin-bottom: 1.3em;
-}
-body {
-  font-family: "AktivGrotesk";
-  width: 100%;
-  max-width: 100vw;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #545253;
-  font-size: 1.125rem;
-  scroll-behavior: smooth;
-  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .Header {
@@ -51,16 +64,16 @@ body {
   z-index: 90;
   /* border: 2px solid orangered; */
 }
-.inner-header {
-  width: 70%;
+.Header .inner-header {
+  /* width: 70%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
 }
 .Header .logo,
 .Header .nav_bar {
   color: #e1003c;
+  margin-bottom: 0;
 }
 .Header nav ul {
   list-style: none;
@@ -133,13 +146,17 @@ nav a {
 .learn_btn:hover {
   border: 1px solid #e1003c;
 }
+
+.laptop_girl {
+  width: 100%;
+  /* background-color: red; */
+}
 .Image {
   width: 100%;
+  /* height: 100%; */
+  /* object-fit: cover; */
 }
-.background .horse_lois {
-  /* width: 300px;
-	height: 500px; */
-}
+
 .background .horse_lois img {
   width: 20%;
   /* height: 900px; */
@@ -147,15 +164,7 @@ nav a {
   top: 0;
   right: 0;
 }
-.section {
-  display: flex;
-  /* flex-direction: row; */
-  align-items: start;
-  /* width: 80%; */
-  justify-content: space-between;
-  margin-top: 5em;
-  /* gap: 3em; */
-}
+
 .sectionA {
   /* text-align: left; */
   display: flex;
@@ -324,7 +333,6 @@ nav a {
 }
 .section4 {
   background-color: #e1003c;
-  /* display: flex; */
 }
 .section4A {
   display: flex;
@@ -332,6 +340,7 @@ nav a {
   color: #fff;
   align-items: center;
   gap: 2em;
+  /* width: 100%; */
 }
 .section4 p {
   font-size: 3rem;
@@ -361,14 +370,13 @@ nav a {
 }
 .section5 img {
   border-radius: 1em;
-  /* width: 45%; */
 }
 .learn-by-doing {
   display: flex;
   flex-direction: column;
   gap: 3em;
 }
-.image {
+.section5 .image {
   width: 45%;
 }
 .section5C {
@@ -454,11 +462,11 @@ nav a {
   justify-content: space-between;
   /* position: relative; */
 }
-.section7 img {
-  border-top-left-radius: 1em;
+.section7 .container img {
+  /* border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   object-fit: cover;
-  height: 15em;
+  height: 15em; */
   width: 100%;
 }
 
@@ -545,4 +553,167 @@ nav a {
   /* transform: scale(10%); */
   background-color: #e1003c;
   color: white;
+}
+/* .section8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0;
+} */
+.section8 h2 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+.section8 h2 span {
+  font-weight: 600;
+}
+.section8 p {
+  font-size: 1.2rem;
+  color: gray;
+  width: 60%;
+  text-align: center;
+  padding-bottom: 2em;
+}
+.section8A {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+.section8B {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+.company {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5em;
+  padding: 2em;
+  width: 100%;
+  justify-content: center;
+}
+.company img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.footer_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section10 {
+  display: flex;
+  flex-direction: row;
+  /* padding-left: 2em; */
+}
+.section10A {
+  display: flex;
+  flex-direction: row;
+  /* min-width: 500px; */
+  height: 40%;
+  border-radius: 1em;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  gap: 2em;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.slide-image {
+  display: block; /* Ensures the image behaves like a block element */
+  margin: auto;
+  width: 30em;
+  height: 10em;
+  object-fit: cover;
+  scrollbar-width: rounded;
+  align-content: center; /* For Firefox */
+}
+
+.slide-image img {
+  /* display: block; Ensures the image behaves like a block element */
+  /* margin: auto; Centers the image horizontally */
+  border-radius: 50%; /* Makes the image round */
+  /* object-fit: cover; Ensures the image fits within the circular shape */
+}
+.section11 {
+  background-color: #e1003c;
+  padding: 2em 0;
+  padding-top: 5em;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  color: #fff;
+  /* gap: 2em; */
+}
+.section11 h2 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+}
+.section11 button {
+  border: none;
+  padding: 1em 2em;
+  border-radius: 50px;
+  background-color: #e1003c;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  border: 2px solid white;
+  justify-content: center;
+  align-content: center;
+}
+.section12A {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2em 0;
+  justify-content: space-between;
+}
+.footer-logo1 {
+  width: 200px;
+  height: 200px;
+  padding-top: 3.5em;
+}
+.footer-logo2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2em 0;
+}
+.section12B {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2em 0;
+  justify-content: space-between;
+}
+.section12C{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2em 0;
+  justify-content: space-between;
+  color: #e1003c;
+}
+.section12D{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2em 0;
+  justify-content: space-between;
+  gap: 1em;
+}
+.section12C p :hover{
+  color: black;
+  cursor: pointer;
 }
